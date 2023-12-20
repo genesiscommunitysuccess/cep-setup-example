@@ -1,0 +1,26 @@
+{
+  "name": "cep-setup-example-app",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "bootstrap": "npm run bootstrap:lib && npm run bootstrap:module",
+    "clean:dist": "rimraf ./dist",
+    "bootstrap:module": "npm i && npm run build",
+    "bootstrap:lib": "cd ../lib && npm run bootstrap:module && cd ../src",
+    "build": "tsc -p ./src/tsconfig.json && vite build",
+    "dev": "npm run build && npm run start",
+    "preview": "vite preview",
+    "start": "vite"
+  },
+  "dependencies": {
+    "@microsoft/fast-components": "2.21.3",
+    "@microsoft/fast-element": "1.11.0",
+    "@microsoft/fast-foundation": "2.47.0",
+    "tslib": "^2.4.1"
+  },
+  "devDependencies": {
+    "cep-setup-example-lib": "file:../lib",
+    "typescript": "4.9.5",
+    "vite": "^4.3.9"
+  }
+}
