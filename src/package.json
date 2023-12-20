@@ -1,5 +1,5 @@
 {
-  "name": "@genesiscommunitysuccess/example-fast-codebase",
+  "name": "cep-setup-example-app",
   "version": "5.0.0",
   "private": true,
   "scripts": {
@@ -20,7 +20,7 @@
   "devDependencies": {
     "@genesiscommunitysuccess/cep-fast-plugin": "5.0.0",
     "@genesiscommunitysuccess/custom-elements-lsp": "5.0.0",
-    "@genesiscommunitysuccess/example-lib": "5.0.0",
+    "cep-setup-example-lib": "file:../lib",
     "typescript": "4.9.5",
     "vite": "^4.3.9"
   }
