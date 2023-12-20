@@ -9,7 +9,6 @@
     "bootstrap:lib": "cd ../lib && npm run bootstrap:module && cd ../src",
     "build": "tsc -p ./src/tsconfig.json && vite build",
     "dev": "npm run build && npm run start",
-    "lsp:analyze": "custom-elements-analyze --tsconfig=./src/tsconfig.json",
     "preview": "vite preview",
     "start": "vite"
   },
@@ -20,8 +19,6 @@
     "tslib": "^2.4.1"
   },
   "devDependencies": {
-    "@genesiscommunitysuccess/cep-fast-plugin": "5.0.2",
-    "@genesiscommunitysuccess/custom-elements-lsp": "5.0.2",
     "cep-setup-example-lib": "file:../lib",
     "typescript": "4.9.5",
     "vite": "^4.3.9"

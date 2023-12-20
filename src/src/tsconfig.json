@@ -1,23 +1,5 @@
 {
   "compilerOptions": {
-    // This matches the package name given in this package.json
-    "plugins": [
-      {
-        "name": "@genesiscommunitysuccess/custom-elements-lsp",
-        "srcRouteFromTSServer": "../../..",
-        "designSystemPrefix": "example",
-        "parser": {
-          "timeout": 1000,
-          "fastEnable": true,
-          "src": "./packages/showcase/example/src/**/*.{js,ts}",
-          "dependencies": [
-            "node_modules/@genesiscommunitysuccess/example-lib/**/custom-elements.json",
-            "!**/@custom-elements-manifest/**/*"
-          ]
-        },
-        "plugins": ["@genesiscommunitysuccess/cep-fast-plugin"]
-      }
-    ],
     "pretty": true,
     "target": "ES2020",
     "module": "commonjs",
