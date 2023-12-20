@@ -3,8 +3,10 @@
   "version": "5.0.0",
   "private": true,
   "scripts": {
+    "bootstrap": "npm run bootstrap:lib && npm run bootstrap:module",
     "clean:dist": "rimraf ./dist",
-    "bootstrap:module": "npm run build",
+    "bootstrap:module": "npm i && npm run build",
+    "bootstrap:lib": "cd ../lib && npm run bootstrap:module && cd ../src",
     "build": "tsc -p ./src/tsconfig.json && vite build",
     "dev": "npm run build && npm run start",
     "lsp:analyze": "custom-elements-analyze --tsconfig=./src/tsconfig.json",
@@ -18,8 +20,8 @@
     "tslib": "^2.4.1"
   },
   "devDependencies": {
-    "@genesiscommunitysuccess/cep-fast-plugin": "5.0.0",
-    "@genesiscommunitysuccess/custom-elements-lsp": "5.0.0",
+    "@genesiscommunitysuccess/cep-fast-plugin": "5.0.2",
+    "@genesiscommunitysuccess/custom-elements-lsp": "5.0.2",
     "cep-setup-example-lib": "file:../lib",
     "typescript": "4.9.5",
     "vite": "^4.3.9"

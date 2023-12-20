@@ -7,7 +7,7 @@
   "types": "dist/dts/index.d.ts",
   "scripts": {
     "clean:dist": "rimraf ./dist",
-    "bootstrap:module": "npm run build && npm run cem:analyze",
+    "bootstrap:module": "npm i && npm run build && npm run cem:analyze",
     "build": "npm run build:tsc",
     "build:tsc": "tsc -b tsconfig.json",
     "cem:analyze": "cem analyze --config custom-elements-manifest.config.js",
@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.8.0",
-    "@genesiscommunitysuccess/cep-fast-plugin": "5.0.0",
-    "@genesiscommunitysuccess/custom-elements-lsp": "5.0.0",
+    "@genesiscommunitysuccess/cep-fast-plugin": "5.0.2",
+    "@genesiscommunitysuccess/custom-elements-lsp": "5.0.2",
     "typescript": "4.9.5"
   },
   "customElements": "dist/custom-elements.json"
