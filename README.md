@@ -17,3 +17,7 @@ If you look at the `setup` branch then you can look at the required change to en
 The `src` and `lib` packages are copies of the showcase applications from commit `79db9e4` from the [main repo](https://github.com/genesiscommunitysuccess/custom-elements-lsp).
 The aim of pulling them out separately into this repo is to make the installation demo easier. This repo will not be kept up to date with those two packages over time, but will
 be updated if there is a large change to the setup that this repo needs to show.
+
+## `setup` branch
+
+This branch contains the changeset required to do a minimal configuration of the LSP in the project. See [this video](https://www.loom.com/share/3dfdb245cbfc4fc1a166df8b19c123a5?sid=05171d67-fd36-46ab-8fa0-321542264512) for more with this setup.
