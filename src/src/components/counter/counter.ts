@@ -1,4 +1,4 @@
-import { Counter, counterTemplate } from '@genesiscommunitysuccess/example-lib';
+import { Counter, counterTemplate } from 'cep-setup-example-lib';
 import { attr, customElement } from '@microsoft/fast-element';
 
 Counter;

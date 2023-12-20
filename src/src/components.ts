@@ -1,4 +1,4 @@
-import { PrioritySelector } from '@genesiscommunitysuccess/example-lib';
+import { PrioritySelector } from 'cep-setup-example-lib';
 import { DesignSystem } from '@microsoft/fast-foundation';
 import { Avatar } from './components/avatar/avatar';
 import { button } from './components/button/button.declaration';
