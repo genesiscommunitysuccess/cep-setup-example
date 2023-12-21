@@ -19,6 +19,8 @@
     "tslib": "^2.4.1"
   },
   "devDependencies": {
+    "@genesiscommunitysuccess/cep-fast-plugin": "^5.0.2",
+    "@genesiscommunitysuccess/custom-elements-lsp": "^5.0.2",
     "cep-setup-example-lib": "file:../lib",
     "typescript": "4.9.5",
     "vite": "^4.3.9"

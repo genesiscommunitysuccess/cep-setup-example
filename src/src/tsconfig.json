@@ -1,5 +1,23 @@
 {
   "compilerOptions": {
+    "plugins": [
+      {
+        "name": "@genesiscommunitysuccess/custom-elements-lsp",
+        "srcRouteFromTSServer": "../../..",
+        "designSystemPrefix": "example",
+        "parser": {
+          "fastEnable": true,
+          "timeout": 2000,
+          "dependencies": [
+            "node_modules/cep-setup-example-lib/**/custom-elements.json",
+            "!**/@custom-elements-manifest/**/*"
+          ]
+        },
+        "plugins": [
+          "@genesiscommunitysuccess/cep-fast-plugin"
+        ]
+      }
+    ],
     "pretty": true,
     "target": "ES2020",
     "module": "commonjs",
@@ -14,7 +32,10 @@
     "stripInternal": true,
     "outDir": "../out",
     "strict": true,
-    "lib": ["dom", "esnext"]
+    "lib": [
+      "dom",
+      "esnext"
+    ]
   },
   "esModuleInterop": true,
   "strict": true,
